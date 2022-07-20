@@ -1,0 +1,19 @@
+body {
+        background-color: #d5c1a8 !important;
+        font-family: 'Noto Sans', sans-serif;
+        position: relative;
+      }
+
+h1, h2, h3, h4, h5, h6 { 
+      font-family: 'Noto Serif', serif;
+}   
+
+
+.logo {
+    height: 2rem;
+}
+
+.navbar {
+    margin: -40px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
