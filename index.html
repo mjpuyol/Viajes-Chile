@@ -14,12 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> 
-    <!--Font awesome-->
+    <!--Font awesome 6.1.1-->
     <script src="https://kit.fontawesome.com/69e6cf652e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!--Nav-->
+<!--Navbar Bootstrap-->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container px-4 px-md-0">
     <a href="#"
@@ -50,7 +50,7 @@
 
 <!--Nav-->
 
-<!--Carrusel-->
+<!--Carrusel Bootstrap-->
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -80,11 +80,11 @@
 <main class="px-4 px-md-0">
 
     <section id="nosotros" class="container d-none d-md-block mt-n5 mt-lg-0 mb-5">
-      <div class="subtitle text-center mt-3">
+      <div class="subtitulo text-center mt-3">
         <i class="fa-solid fa-globe me-2"></i>
         <h2 class="d-inline-block">¿Quiénes somos?</h2>
       </div>
-      <hr />
+      <hr/>
       <div class="bio row row-cols-3 mt-4">
         <div class="col">
           <p class="bg-dark text-center">
@@ -120,7 +120,7 @@
         </div>
         <div class="col">
           <p class="bg-dark text-center">
-            <i class="fas fa-route py-2 text-light"></i>
+            <i class="fas fa-map-location-dot py-2 text-light"></i>
           </p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
@@ -143,35 +143,31 @@
 <!--Cards-->
 
 <section id="destacados" class="container mb-5">
-  <div class="subtitle text-center mt-3">
+  <div class="subtitulo text-center mt-3">
     <i class="fa-brands fa-pagelines"></i>
     <h2 class="d-inline-block">Destacados</h2>
   </div>
   <hr class="mb-4" />
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
     <div class="col">
-      <div class="card h-100">
-        <!-- Componente JS 3: Tooltips en las fotos -->
-
+      <div class="card">
+        <!--JS Tooltips en las fotos -->
         <img
           src="assets/img/card1.jpg" class="card-img-top" alt="Hermoso paisaje" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Foto de hermoso paisaje"/>
         <div class="card-body">
-          <!-- Componente Bootstrap 3: Badge -->
-
-          <h5 class="card-title">
-            Lorem ipsum
-            <span class="badge bg-info">Nuevo destino</span>
-          </h5>
-          <p class="card-text">
+          <h5 class="card-title">Paisaje Hermoso</h5>
+          <p id="cardText1" class="card-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Pariatur officia veritatis sint veniam ex, architecto quis,
             doloribus porro dignissimos libero mollitia expedita ducimus
             ut in labore excepturi. Laudantium, non optio.
           </p>
-          <!-- Componente Bootstrap 4: Button -->
+
+
+          <!-- Componente Bootstrap: Button con JQuery Toggle -->
 
           <div class="text-end">
-            <button type="button" class="btn btn-outline-dark">
+            <button type="button" id="toggle1" class="btn btn-outline-dark">
               Leer más
             </button>
           </div>
@@ -180,20 +176,20 @@
     </div>
 
     <div class="col">
-      <div class="card h-100">
+      <div class="card">
         <img
           src="assets/img/card2.jpg"
           class="card-img-top" alt="Laguna" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Foto de Laguna"/>
         <div class="card-body">
-          <h5 class="card-title">Lorem ipsum</h5>
-          <p class="card-text">
+          <h5 class="card-title">Altiplano Místico</h5>
+          <p id="cardText2" class="card-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Pariatur officia veritatis sint veniam ex, architecto quis,
             doloribus porro dignissimos libero mollitia expedita ducimus
             ut in labore excepturi. Laudantium, non optio.
           </p>
           <div class="text-end">
-            <button type="button" class="btn btn-outline-dark">
+            <button id="toggle2" type="button" class="btn btn-outline-dark">
               Leer más
             </button>
           </div>
@@ -202,18 +198,18 @@
     </div>
 
     <div class="col">
-      <div class="card h-100">
-        <img src="assets/img/card3.jpg" class="card-img-top"alt="Laguna" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Foto de Laguna"/>
+      <div class="card">
+        <img src="assets/img/card3.jpg" class="card-img-top"alt="Laguna" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Foto de Salar"/>
         <div class="card-body">
-          <h5 class="card-title">Lorem ipsum</h5>
-          <p class="card-text">
+          <h5 class="card-title">Salar Paradisiaco</h5>
+          <p id="cardText3" class="card-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Pariatur officia veritatis sint veniam ex, architecto quis,
             doloribus porro dignissimos libero mollitia expedita ducimus
             ut in labore excepturi. Laudantium, non optio.
           </p>
           <div class="text-end">
-            <button type="button" class="btn btn-outline-dark">
+            <button id="toggle3" type="button" class="btn btn-outline-dark">
               Leer más
             </button>
           </div>
@@ -222,18 +218,18 @@
     </div>
 
     <div class="col">
-      <div class="card h-100">
+      <div class="card">
         <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque"/>
         <div class="card-body">
-          <h5 class="card-title">Lorem ipsum</h5>
-          <p class="card-text">
+          <h5 class="card-title">Bosque Misterioso</h5>
+          <p id="cardText4" class="card-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Pariatur officia veritatis sint veniam ex, architecto quis,
             doloribus porro dignissimos libero mollitia expedita ducimus
             ut in labore excepturi. Laudantium, non optio.
           </p>
           <div class="text-end">
-            <button type="button" class="btn btn-outline-dark dat"a>
+            <button id="toggle4" type="button" class="btn btn-outline-dark dat">
               Leer más
             </button>
           </div>
@@ -249,10 +245,16 @@
 
 <!--Formulario-->
 
+<div class="container d-flex justify-content-center pb-5">
+  <div data-tf-widget="H4VXj3cD" data-tf-opacity="0" data-tf-iframe-props="title=Contacto-Viajes" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>
+</div>
+
 <!--Formulario-->
 
 <!--Footer-->
+
 <footer class="bg-dark py-4">
+
   <div class="container px-5">
     <div class="row row-cols-1 row-cols-md-2 text-center">
       <h2 class="col my-auto text-light">Viajes Chile</h2>
@@ -264,12 +266,17 @@
       </div>
     </div>
   </div>
+
 </footer>
+
 <!--Footer-->
+
  <!-- JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+ 
  <!--Mi JS-->
  <script src="assets/js/script.js"></script> 
+
 </body>
 </html>
